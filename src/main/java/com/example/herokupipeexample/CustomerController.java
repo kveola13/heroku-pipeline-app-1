@@ -18,7 +18,7 @@ public class CustomerController {
     }
 
     @RequestMapping("/find")
-    public List<Customer> find(@RequestParam(value="name") String lastName) {
+    public List<Customer> find(@RequestParam(value="lastName") String lastName) {
         return customerRepository.findByLastName(lastName);
     }
 
